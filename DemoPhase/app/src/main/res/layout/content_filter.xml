@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_filter">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Category"
+                    android:textSize="25dp"
+                    android:textColor="@color/blackScreen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/Category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+                        <CheckBox
+                            android:id="@+id/CB_events"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Events"
+                            android:layout_weight="0.5"/>
+                        <CheckBox
+                            android:id="@+id/CB_workshops"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Workshops"
+                            android:layout_weight="0.5"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Day"
+                    android:textSize="25dp"
+                    android:textColor="@color/blackScreen"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/Day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_weight=".5">
+
+                        <CheckBox
+                            android:id="@+id/CB_day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 1"
+                            android:layout_weight="0.5"/>
+                        <CheckBox
+                            android:id="@+id/CB_day2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 2"
+                            android:layout_weight="0.5"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Department"
+                    android:textSize="25dp"
+                    android:textColor="@color/blackScreen"
+                    android:textStyle="bold" />
+                <RadioGroup
+                    android:id="@+id/Department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="50dp">
+
+                    <CheckBox
+                        android:id="@+id/CB_arch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Architecture" />
+
+                    <CheckBox
+                        android:id="@+id/CB_biotech"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bio-Technology"/>
+                    <CheckBox
+                        android:id="@+id/CB_chemEgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chemical Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_chem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chemistry"/>
+                    <CheckBox
+                        android:id="@+id/CB_civil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Civil Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_compEgg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Science and Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_ece"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Electronics And Communication Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_eee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Electrical And Electronics Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_eie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Electronics and Instrumentation Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_iem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Industrial Engineeering And Management"/>
+                    <CheckBox
+                        android:id="@+id/CB_ise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Information Science And Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_math"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mathematics"/>
+                    <CheckBox
+                        android:id="@+id/CB_MBA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MBA"/>
+                    <CheckBox
+                        android:id="@+id/CB_compApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MCA"/>
+                    <CheckBox
+                        android:id="@+id/CB_mech"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mechanical Engineering"/>
+                    <CheckBox
+                        android:id="@+id/CB_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Electronics"/>
+
+                    <CheckBox
+                        android:id="@+id/CB_phys"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Physics"/>
+                    <CheckBox
+                        android:id="@+id/CB_tce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Telecommunication Engineering" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/applyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_primary"
+                android:text="APPLY"
+                android:textColor="#ffffff"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
